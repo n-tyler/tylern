@@ -30,13 +30,6 @@ header {
   margin-top: 60px;
 }
 
-.header-deco {
-  width: 80px;
-  height: 10px;
-  margin-bottom: 30px;
-  background-color: #990000;
-}
-
 .header-name-container {
   position: relative;
 }
@@ -52,7 +45,7 @@ header {
 }
 
 .header-meta {
-  color: #990000;
+  color: #000000;
   font-size: 40px;
 }
 
@@ -66,7 +59,7 @@ header {
   width: 80px;
   height: 10px;
   margin-bottom: 15px;
-  background-color: #990000;
+  background-color: #000000;
 }
 
 .header-meta-container {
@@ -75,7 +68,7 @@ header {
 
 .header-meta-name {
   font-weight: 200;
-  color: #990000;
+  color: #000000;
   font-size: 25px;
 }
 
@@ -102,20 +95,20 @@ header {
 
 .article-heading {
   font-size: 40px;
-  color: #990000;
-  /* border-bottom: 1px solid #990000; */
+  color: #000000;
+  /* border-bottom: 1px solid #000000; */
 }
 
 .article-content {
   font-size: 25px;
   padding-left: 30px;
-  border-left: 1px solid #990000;
+  border-left: 1px solid #000000;
   line-height: 37px;
 }
 
 .career-container {
   margin-top: 60px;
-  border-left: 1px solid #990000;
+  border-left: 1px solid #000000;
   padding-left: 30px;
 }
 
@@ -125,7 +118,7 @@ header {
 
 .career-name {
   font-size: 30px;
-  color: #990000;
+  color: #000000;
 }
 
 .career-job {
@@ -153,12 +146,12 @@ header {
 }
 
 .career-tech-name {
-  color: #990000;
+  color: #000000;
   font-weight: 300;
 }
 
 .edu-status {
-  color: #990000;
+  color: #000000;
 }
 
 .project-list-container {
@@ -170,7 +163,7 @@ header {
   font-size: 30px;
   margin-top: 50px;
   margin-bottom: 30px;
-  color: #990000;
+  color: #000000;
 }
 
 .career-divider {
@@ -190,12 +183,12 @@ header {
   display: block;
   margin-top: 30px;
   margin-bottom: 30px;
-  border-left: 1px solid #990000;
+  border-left: 1px solid #000000;
   padding-left: 30px;
 }
 
 .project-name {
-  color: #990000;
+  color: #000000;
   font-size: 25px;
 }
 
@@ -209,7 +202,7 @@ header {
 }
 
 .project-tech-name {
-  color: #990000;
+  color: #000000;
   font-weight: 500;
   display: block;
   margin-top: 20px;
@@ -221,11 +214,11 @@ header {
   font-size: 20px;
   line-height: 30px;
   /*padding-left: 20px;
-  border-left: 1px solid #990000;*/
+  border-left: 1px solid #000000;*/
 }
 
 .strong-red {
-  color: #990000;
+  color: #000;
 }
 
 .presentation-date {
@@ -267,7 +260,7 @@ header {
 }
 
 .skill-head {
-  color: #990000;
+  color: #000000;
 }
 
 .skill-bar-container {
@@ -279,12 +272,12 @@ header {
 
 .skill-bar {
   height: 25px;
-  background-color: #990000;
+  background-color: #000000;
 }
 
 footer {
-  color: #990000;
-  border-top: 1px solid grey;
+  color: #000000;
+  border-top: 1px solid black;
   padding-top: 30px;
   font-weight: 500;
 }
