@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tyler Naus</title>
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.10.0-rc.1/dist/katex.min.css" integrity="sha384-D+9gmBxUQogRLqvARvNLmA9hS2x//eK1FhVb9PiU86gmcrBrJAQT8okdJ4LMp2uv" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/katex@0.10.0-rc.1/dist/katex.min.js" integrity="sha384-483A6DwYfKeDa0Q52fJmxFXkcPCFfnXMoXblOkJ4JcA8zATN6Tm78UNL72AKk+0O" crossorigin="anonymous"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.10.0-rc.1/dist/contrib/auto-render.min.js" integrity="sha384-yACMu8JWxKzSp/C1YV86pzGiQ/l1YUfE8oPuahJQxzehAjEt2GiQuy/BIvl9KyeF" crossorigin="anonymous"
+        onload="renderMathInElement(document.body);"></script>
+    <style>
+      body {
+        max-width: 400px;
+        padding: 18px;
+        background-color: #fff;
+        font-size: 18px;
+        color: #000;
+        text-align: justify;
+        margin: auto;
+        font-family: 'Garamond';
+        line-height: 1.15;
+      }
+      div.a {
+        text-align: left;
+      }
+      div.b {
+        text-align: center;
+      }
+      .img-container {
+        width: 100%;
+      }
+      .img-cont3 {
+        width: 67%;
+      }
+      hr {
+        border: 1px solid black;
+      }
+      .box {
+        margin: auto;
+        width: 100%;
+        height: auto;
+        border: 2px solid black;
+        text-align: left;
+      }
+      summary {
+          line-height: 8px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="a">
+      <h2>CAE w/ Ansys, OpenFOAM, Octave</h2>
+      <h3>Tyler Naus</h3>
+    </div>
+    <hr>
+    <div class="box">
+      <details>
+        <summary><h4>Bifurcating Artery Steady-State</h4></summary>
+          <p><b>Governing equations</b>: <br>Mass conservation: \(\frac {\partial u_i}{\partial x_i} = 0\)<br>
+          Momentum conservation:<br>\(\frac {\partial u_i}{\partial t} + u_j \frac{\partial u_i}{\partial x_j} = - \frac {1}{\rho} \frac {\partial P}{\partial x_i} + \nu \frac{\partial^2 u_i}{\partial x_j \partial x_j}\)<br>
+            where \(u_i\) = Fluid velocity (vector), \(P\) = Fluid pressure (scalar), \(\rho\) = Density, \(\nu\) = Kinematic viscosity <br>
+          <br><b>Initial and boundary conditions</b>: Inlet: 0.315 m/s steady<br>Outlet: 100 mmHg (13332 Pa) static<br>Wall: No-slip <br>
+          <br><b>Simplifying assumptions</b>: Isothermal, incompressible flow<br>\(\rho\) = 1060 kg/m<sup>3</sup>, \(\nu\) = 3.30 x 10<sup>-6</sup> m<sup>2</sup>/s <br>
+          <br><b>Mesh</b>: 27,453 nodes, 87,540 elements </p>
+        <img class="img-container" src="img2.png">
+      </details>
+    </div>
+         
+    <div class="box">
+      <details>
+        <summary><h4>Lid-Driven Cavity</h4></summary>
+          <p><b>Governing eqs</b>: Incompressible laminar Navier–Stokes eqns (icoFoam solver) <br>
+          <br><b>Initial and boundary conditions</b>: Top wall moves at steady velocity of 1 m/s, Wall: No-slip <br>Re = 100</p>
+        <img class="img-cont3" src="cavity.svg">
+        <img class="img-cont3" src="cavity.png">
+      </details>
+    </div>
+    
+        <div class="box">
+      <details>
+       <summary><h4>Stress Analysis of Plate w/ Hole</h4></summary>
+        <p><b>Solver</b>: SolidDisplacementFoam</p>
+        <img class="img-cont3" src="plate.svg">
+        <img class="img-cont3" src="plate.png"> <p>\(\sigma_{xx}\)<br>Stress field for plate w/ hole </p>
+      </details>
+    </div>
+    
+    <div class="box">
+      <details>
+       <summary><h4>Lid-Driven Cavity Octave</h4></summary>
+        <p>Governing eqs: Vorticity transport eqs<br>Re: 100</p>
+        <img class="img-container" src="cavity_2.svg">
+      </details>
+    </div>
+    <hr>
+        <div class="box">
+      <details>
+       <summary><h4>Flow Field in in GNU Octave</h4></summary>
+        <p>Steady flow field visualization for the equation:<br>\(u=2x^2-xy+z^2,\:v=x^2-4xy+y^2,\:w=2xy-yz+y^2\)</p>
+        <img class="img-container" src="flowstream.svg"><p>Streamline plotted from (-0.5,-0.5,-0.5)</p>
+      </details>
+    </div>
+    <div class="b">
+      <p>&copy;Tyler Naus. All Rights Reserved </p>
+      </div>
+  </body>
+</html>
