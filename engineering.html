@@ -14,7 +14,7 @@
         max-width: 400px;
         padding: 18px;
         background-color: #fff;
-        font-size: 15px;
+        font-size: 16px;
         color: #000;
         text-align: justify;
         margin: auto;
@@ -50,12 +50,12 @@
   </head>
   <body>
     <div class="a">
-      <h1>CAE w/ Ansys, OpenFOAM, Octave</h1>
+      <p>CAE w/ Ansys, OpenFOAM, Octave</p>
     </div>
     <hr>
     <div class="box">
       <details>
-        <summary>Bifurcating Artery Steady-State</summary>
+        <summary><br>Bifurcating Artery Steady-State<br></summary>
           <p><b>Governing equations</b>: <br>Mass conservation: \(\frac {\partial u_i}{\partial x_i} = 0\)<br>
           Momentum conservation:<br>\(\frac {\partial u_i}{\partial t} + u_j \frac{\partial u_i}{\partial x_j} = - \frac {1}{\rho} \frac {\partial P}{\partial x_i} + \nu \frac{\partial^2 u_i}{\partial x_j \partial x_j}\)<br>
             where \(u_i\) = Fluid velocity (vector), \(P\) = Fluid pressure (scalar), \(\rho\) = Density, \(\nu\) = Kinematic viscosity <br>
@@ -68,7 +68,7 @@
          
     <div class="box">
       <details>
-        <summary>Lid-Driven Cavity</summary>
+        <summary><br>Lid-Driven Cavity<br></summary>
           <p><b>Governing eqs</b>: Incompressible laminar Navier–Stokes eqns (icoFoam solver) <br>
           <br><b>Initial and boundary conditions</b>: Top wall moves at steady velocity of 1 m/s, Wall: No-slip <br>Re = 100</p>
         <img class="img-cont3" src="cavity.svg">
@@ -78,7 +78,7 @@
     
         <div class="box">
       <details>
-       <summary>Stress Analysis of Plate w/ Hole</summary>
+       <summary><br>Stress Analysis of Plate w/ Hole<br></summary>
         <p><b>Solver</b>: SolidDisplacementFoam</p>
         <img class="img-cont3" src="plate.svg">
         <img class="img-cont3" src="plate.png"> <p>\(\sigma_{xx}\)<br>Stress field for plate w/ hole </p>
@@ -87,7 +87,7 @@
     
     <div class="box">
       <details>
-       <summary>Lid-Driven Cavity Octave</summary>
+       <summary><br>Lid-Driven Cavity Octave<br></summary>
         <p>Governing eqs: Vorticity transport eqs<br>Re: 100</p>
         <img class="img-container" src="cavity_2.svg">
       </details>
@@ -95,7 +95,7 @@
     <hr>
         <div class="box">
       <details>
-       <summary>Flow Field in in GNU Octave</summary>
+       <summary><br>Flow Field in in GNU Octave<br></summary>
         <p>Steady flow field visualization for the equation:<br>\(u=2x^2-xy+z^2,\:v=x^2-4xy+y^2,\:w=2xy-yz+y^2\)</p>
         <img class="img-container" src="flowstream.svg"><p>Streamline plotted from (-0.5,-0.5,-0.5)</p>
       </details>
