@@ -56,8 +56,7 @@
     <div class="box">
       <details>
         <summary>Bifurcating Artery Steady-State<br></summary>
-          <p>Inlet: 0.315 m/s steady, Outlet: 100 mmHg (13332 Pa) static<br>
-          <br><b>Simplifying assumptions</b>: Isothermal, incompressible flow<br>\(\nu\) = 1060 kg/m<sup>3</sup>, \(\nu\) = 3.30 x 10<sup>-6</sup> m<sup>2</sup>/s <br>
+          <p>Inlet: 0.315 m/s steady, Outlet: 100 mmHg (13332 Pa) static<br>\(\nu\) = 1060 kg/m<sup>3</sup>, \(\nu\) = 3.30 x 10<sup>-6</sup> m<sup>2</sup>/s <br>
         <img class="img-container" src="artery.png">
       </details>
     </div>
@@ -65,8 +64,8 @@
     <div class="box">
       <details>
         <summary>Lid-Driven Cavity<br></summary>
-          <p><b>Governing eqs</b>: Incompressible laminar Navier–Stokes eqns (icoFoam solver) <br>
-          <br><b>Initial and boundary conditions</b>: Top wall moves at steady velocity of 1 m/s, Wall: No-slip <br>Re = 100</p>
+          <p>Solver: IcoFoam<br>
+          <br>Top wall moves at steady velocity of 1 m/s, Wall: No-slip <br>Re = 100</p>
         <img class="img-cont3" src="cavity.svg">
         <img class="img-cont3" src="cavity.png">
       </details>
@@ -75,7 +74,7 @@
         <div class="box">
       <details>
        <summary>Stress Analysis of Plate w/ Hole<br></summary>
-        <p><b>Solver</b>: SolidDisplacementFoam</p>
+        <p>Solver: SolidDisplacementFoam</p>
         <img class="img-cont3" src="plate.svg">
         <img class="img-cont3" src="plate.png"> <p>\(\sigma_{xx}\)<br>Stress field</p>
       </details>
@@ -92,7 +91,7 @@
         <div class="box">
       <details>
        <summary>Flow Field<br></summary>
-        <p>Steady flow field visualization for the equation:<br>\(u=2x^2-xy+z^2,\:v=x^2-4xy+y^2,\:w=2xy-yz+y^2\)</p>
+        <p>Steady flow field visualization for<br>\(u=2x^2-xy+z^2,\:v=x^2-4xy+y^2,\:w=2xy-yz+y^2\)</p>
         <img class="img-container" src="flowstream.svg"><p>Streamline plotted from (-0.5,-0.5,-0.5)</p>
       </details>
     </div>
