@@ -1,107 +1,128 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.10.0-rc.1/dist/katex.min.css" integrity="sha384-D+9gmBxUQogRLqvARvNLmA9hS2x//eK1FhVb9PiU86gmcrBrJAQT8okdJ4LMp2uv" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/katex@0.10.0-rc.1/dist/katex.min.js" integrity="sha384-483A6DwYfKeDa0Q52fJmxFXkcPCFfnXMoXblOkJ4JcA8zATN6Tm78UNL72AKk+0O" crossorigin="anonymous"></script>
-    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.10.0-rc.1/dist/contrib/auto-render.min.js" integrity="sha384-yACMu8JWxKzSp/C1YV86pzGiQ/l1YUfE8oPuahJQxzehAjEt2GiQuy/BIvl9KyeF" crossorigin="anonymous"
-        onload="renderMathInElement(document.body);"></script>
-    <title>Tyler Naus</title>
-    <style>
-      body {
-        max-width: 720px;
-        padding: 12px;
-        background-color: #fff;
-        font-size: 16px;
-        color: #36454F;
-        text-align: justify;
-        margin: auto;
-        font-family: -apple-system, BlinkMacSystemFont, sans-serif;
-        font-weight: 400;
-        line-height: 1.5;
-      }
-      div.a {
-        text-align: left;
-      }
-      div.b {
-        text-align: center;
-      }
-      .img-container {
-        width: 100%;
-      }
-      .img-cont3 {
-        width: 80%;
-      }
-      hr {
-        border: 1px solid black;
-      }
-      .box {
-        margin: auto;
-        width: 100%;
-        height: auto;
-        border: 3px solid black;
-        text-align: left;
-      }
-      summary {
+ <head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.10.0-rc.1/dist/katex.min.css" integrity="sha384-D+9gmBxUQogRLqvARvNLmA9hS2x//eK1FhVb9PiU86gmcrBrJAQT8okdJ4LMp2uv" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/katex@0.10.0-rc.1/dist/katex.min.js" integrity="sha384-483A6DwYfKeDa0Q52fJmxFXkcPCFfnXMoXblOkJ4JcA8zATN6Tm78UNL72AKk+0O" crossorigin="anonymous"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.10.0-rc.1/dist/contrib/auto-render.min.js" integrity="sha384-yACMu8JWxKzSp/C1YV86pzGiQ/l1YUfE8oPuahJQxzehAjEt2GiQuy/BIvl9KyeF" crossorigin="anonymous" onload="renderMathInElement(document.body);"></script>
+  <title>Tyler Naus</title>
+  <style>
+   body {
+    max-width: 720px;
+    padding: 12px;
+    background-color: #fff;
+    font-size: 16px;
+    color: #36454F;
+    text-align: justify;
+    margin: auto;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    font-weight: 400;
+    line-height: 1.5;
+   }
+
+   div.a {
+    text-align: left;
+   }
+
+   div.b {
+    text-align: center;
+   }
+
+   .img-container {
+    width: 100%;
+   }
+
+   .img-cont2 {
+    width: 50%
+   }
+
+   .img-cont3 {
+    width: 75%;
+   }
+
+   hr {
+    border: 1px solid black;
+   }
+
+   .box {
+    margin: auto;
+    width: 100%;
+    height: auto;
+    border: 3px solid black;
+    text-align: left;
+   }
+
+   summary {
     margin: -0.5em -0.5em 0;
     padding: 0.5em;
-}
-    </style>
-  </head>
-  <body>
-    <div class="a">
-      <h3>CAE w/ Ansys, OpenFOAM, Octave</h3>
-    </div>
-    <div class="box">
-      <details>
-        <summary>Blood Flow CFD - Fluent<br></summary>
-        <h3>Carotid Bifurcation</h3>
-          <p>Inlet: 0.315 m/s steady, Outlet: 13332 Pa static<br>\(\rho\) = 1060 kg/m<sup>3</sup>, \(\nu\) = 3.30 x 10<sup>-6</sup> m<sup>2</sup>/s </p>
-        <img class="img-container" src="bif_artery.png">
-            <br><h3>Circle of Willis Model</h3>
-        <p>Inlets: 0.5 m/s, 0.15 m/s steady, Outlets: 13332 Pa static<br>\(\rho\) = 1060 kg/m<sup>3</sup>, \(\nu\) = Carreau model </p>
-        <img class="img-container" src="CoW.png">
-      </details>
-    </div>
-    
-    <div class="box">
-      <details>
-        <summary>Lid-Driven Cavity - FOAM<br></summary>
-          <p>Solver: IcoFoam<br>
-          <br>Top wall 1 m/s, Re = 100</p>
-        <img class="img-cont3" src="cavity.svg">
-        <img class="img-cont3" src="Cavity_FOAM.png">
-      </details>
-    </div>
-    
-        <div class="box">
-      <details>
-       <summary>Stress Analysis of Plate w/ Hole<br></summary>
-        <p>Solver: SolidDisplacementFoam</p>
-        <img class="img-cont3" src="plate.svg">
-        <img class="img-cont3" src="Plate_FOAM.png"> <p>\(\sigma_{xx}\)<br>Stress field</p>
-      </details>
-    </div>
-    
-    <div class="box">
-      <details>
-       <summary>Lid-Driven Cavity - Octave<br></summary>
-        <p>Using vorticity transport equations<br>Re = 100</p>
-        <img class="img-container" src="cavity_2.svg">
-      </details>
-    </div>
-    
-        <div class="box">
-      <details>
-       <summary>Flow Field<br></summary>
-        <p>Steady flow field visualization for<br>\(u=2x^2-xy+z^2,\:v=x^2-4xy+y^2,\:w=2xy-yz+y^2\)</p>
-        <img class="img-container" src="flowstream.svg"><p>Streamline plotted from (-0.5,-0.5,-0.5)</p>
-      </details>
-    </div>
-    <div class="b">
-      <p>&copy;Tyler Naus. All Rights Reserved </p>
-      </div>
-  </body>
+   }
+  </style>
+ </head>
+ <body>
+  <div class="a">
+   <h3>CAE w/ Ansys, OpenFOAM, Octave</h3>
+  </div>
+  <div class="box">
+   <details>
+    <summary>Blood Flow CFD - Fluent <br>
+    </summary>
+    <h3>Carotid Bifurcation</h3>
+    <p>Inlet: 0.315 m/s steady, Outlet: 13332 Pa static <br>\(\rho\) = 1060 kg/m <sup>3</sup>, \(\nu\) = Carreau model </p>
+    <img class="img-cont2" src="artery_setup.png">
+    <img class="img-container" src="artery.png">
+    <br>
+    <h3>Circle of Willis Model</h3>
+    <p>Inlets: 0.5 m/s (Internal carotid arteries), 0.15 m/s (Vertebral arteries) Outlets: 13332 Pa static </p>
+    <img class="img-cont2" src="CoW_setup.png">
+    <img class="img-container" src="CoW.png">
+   </details>
+  </div>
+  <div class="box">
+   <details>
+    <summary>Lid-Driven Cavity - FOAM <br>
+    </summary>
+    <p>Solver: IcoFoam <br>
+     <br>Top wall 1 m/s, Re = 100
+    </p>
+    <img class="img-cont3" src="cavity.svg">
+    <center>
+     <img class="img-cont3" src="Cavity_FOAM.png">
+    </center>
+   </details>
+  </div>
+  <div class="box">
+   <details>
+    <summary>Stress Analysis of Plate w/ Hole <br>
+    </summary>
+    <p>Solver: SolidDisplacementFoam</p>
+    <img class="img-cont3" src="plate.svg">
+    <center>
+     <img class="img-cont3" src="Plate_FOAM.png">
+    </center>
+    <p>\(\sigma_{xx}\) <br>Stress field </p>
+   </details>
+  </div>
+  <div class="box">
+   <details>
+    <summary>Lid-Driven Cavity - Octave <br>
+    </summary>
+    <p>Using vorticity transport equations <br>Re = 100 </p>
+    <img class="img-container" src="cavity_2.svg">
+   </details>
+  </div>
+  <div class="box">
+   <details>
+    <summary>Flow Field <br>
+    </summary>
+    <p>Steady flow field visualization for <br>\(u=2x^2-xy+z^2,\:v=x^2-4xy+y^2,\:w=2xy-yz+y^2\) </p>
+    <img class="img-container" src="flowstream.svg">
+    <p>Streamline plotted from (-0.5,-0.5,-0.5)</p>
+   </details>
+  </div>
+  <div class="b">
+   <p>&copy;Tyler Naus. All Rights Reserved </p>
+  </div>
+ </body>
 </html>
