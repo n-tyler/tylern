@@ -6,30 +6,25 @@
     <title>Tyler Naus</title>
     <style>
       body {
-        max-width: 1000px;
+        max-width: 750px;
         font-family: "apple-system", sans-serif;
         margin: 20px;
-        opacity: 0;
-        transition: opacity 1s ease-in-out;
-        font-weight: 200;
-      }
-
-      body.fade-in {
-        opacity: 1;
+        font-weight: 400;
       }
 
       .flag {
-        margin: 22px auto;
-        padding: 10px;
+        margin: 0px auto;
+        padding: 0px;
         text-align: center;
       }
-        
+
       .card {
         max-width: 700px;
-        margin: 10px auto;
-        padding: 10px;
-        background-color: #f5f5f5;
+        margin: 20px auto;
+        padding: 20px;
+        background-color: #fff;
         text-align: center;
+        box-shadow: 5px 5px 7px rgba(0, 0, 0, 1);
       }
 
       h1 {
@@ -38,7 +33,7 @@
       }
 
       p {
-        line-height: 1.5;
+        line-height: 1.6;
         color: #000;
         margin-bottom: 10px;
       }
@@ -48,9 +43,13 @@
         color: #4285f4;
       }
 
+      a:visited {
+        color: #4285f4;
+      }
+
       footer {
         text-align: center;
-        margin-top: 0;
+        margin-top: 10px;
         padding: 10px;
         background-color: #ffffff;
         font-size: 14px;
@@ -59,23 +58,19 @@
   </head>
   <body class="fade-in">
     <div class="flag">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/a/a4/Flag_of_the_United_States.svg" width = 10%/>
+      <img src="https://upload.wikimedia.org/wikipedia/commons/a/a4/Flag_of_the_United_States.svg" width="15%" />
     </div>
     <div class="card">
       <h1>Tyler Naus</h1>
-      <p>Engineer-in-Training</p>
-      <p>New Baltimore, MI</p>
+      <p>Engineer-in-Training <br>New Baltimore, MI </p>
       <p>Email: <a href="mailto:tylernaus@outlook.com">tylernaus@outlook.com</a>
       </p>
       <p>
         <a href="engineering.html">Engineering Work</a> | <a href="#">Articles</a>
       </p>
     </div>
-    <footer>
+    <footer class="footer-chamfer">
       <p>&copy; 2024 Tyler Naus. All rights reserved.</p>
     </footer>
-    <script>
-      document.body.classList.add('fade-in');
-    </script>
   </body>
 </html>
