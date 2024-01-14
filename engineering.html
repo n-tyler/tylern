@@ -1,113 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
- <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.10.0-rc.1/dist/katex.min.css" integrity="sha384-D+9gmBxUQogRLqvARvNLmA9hS2x//eK1FhVb9PiU86gmcrBrJAQT8okdJ4LMp2uv" crossorigin="anonymous">
-  <script src="https://cdn.jsdelivr.net/npm/katex@0.10.0-rc.1/dist/katex.min.js" integrity="sha384-483A6DwYfKeDa0Q52fJmxFXkcPCFfnXMoXblOkJ4JcA8zATN6Tm78UNL72AKk+0O" crossorigin="anonymous"></script>
-  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.10.0-rc.1/dist/contrib/auto-render.min.js" integrity="sha384-yACMu8JWxKzSp/C1YV86pzGiQ/l1YUfE8oPuahJQxzehAjEt2GiQuy/BIvl9KyeF" crossorigin="anonymous" onload="renderMathInElement(document.body);"></script>
-  <title>Tyler N</title>
-  <style>
-   body {
-    max-width: 720px;
-    padding: 12px;
-    background-color: #fff;
-    font-size: 16px;
-    color: #36454F;
-    text-align: justify;
-    margin: auto;
-    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
-    font-weight: 400;
-    line-height: 1.5;
-   }
 
-   div.a {
-    text-align: left;
-   }
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.10.0-rc.1/dist/katex.min.css"
+        integrity="sha384-D+9gmBxUQogRLqvARvNLmA9hS2x//eK1FhVb9PiU86gmcrBrJAQT8okdJ4LMp2uv"
+        crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/katex@0.10.0-rc.1/dist/katex.min.js"
+        integrity="sha384-483A6DwYfKeDa0Q52fJmxFXkcPCFfnXMoXblOkJ4JcA8zATN6Tm78UNL72AKk+0O"
+        crossorigin="anonymous"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.10.0-rc.1/dist/contrib/auto-render.min.js"
+        integrity="sha384-yACMu8JWxKzSp/C1YV86pzGiQ/l1YUfE8oPuahJQxzehAjEt2GiQuy/BIvl9KyeF"
+        crossorigin="anonymous" onload="renderMathInElement(document.body);"></script>
+    <title>Tyler N</title>
+    <style>
+        body {
+            max-width: 720px;
+            padding: 12px;
+            background-color: #fff;
+            font-size: 16px;
+            color: #36454F;
+            text-align: justify;
+            margin: auto;
+            font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+            font-weight: 400;
+            line-height: 1.5;
+        }
 
-   div.b {
-    text-align: center;
-   }
+        div.a {
+            text-align: left;
+        }
 
-   .img-container {
-    width: 100%;
-   }
+        div.b {
+            text-align: center;
+        }
 
-   .img-cont2 {
-    width: 67%
-   }
+        .img-container {
+            width: 100%;
+        }
 
-   .img-cont3 {
-    width: 75%;
-   }
+        .img-cont2,
+        .img-cont3 {
+            width: 75%;
+        }
 
-   hr {
-    border: 1px solid black;
-   }
+        hr {
+            border: 1px solid black;
+        }
 
-   .box {
-    margin: auto;
-    width: 100%;
-    height: auto;
-    border: 3px solid black;
-    text-align: left;
-   }
+        .box {
+            margin: 20px auto;
+            width: 100%;
+            border: 3px solid black;
+            text-align: left;
+            border-radius: 10px; /* Rounded corners */
+        }
 
-   summary {
-    margin: -0.5em -0.5em 0;
-    padding: 0.5em;
-   }
-  </style>
- </head>
- <body>
-  <div class="a">
-   <h3>CAE w/ Ansys, OpenFOAM, Octave</h3>
-  </div>
-  <div class="box">
-   <details>
-    <summary>Blood Flow CFD - Fluent <br>
-    </summary>
-    <h3>Carotid Bifurcation</h3>
-    <p>Inlet: 0.315 m/s steady, Outlet: 13332 Pa static <br>\(\rho\) = 1060 kg/m <sup>3</sup>, \(\nu\) = Carreau model </p>
-    <img class="img-cont2" src="artery_setup.png">
-    <img class="img-container" src="artery.png">
-    <br>
-    <h3>Circle of Willis Model</h3>
-    <p>Inlets: 0.5 m/s (Internal carotid arteries), 0.15 m/s (Vertebral arteries) Outlets: 13332 Pa static </p>
-    <img class="img-cont2" src="CoW_setup.png">
-    <img class="img-container" src="CoW_pressure.png">
-    <img class="img-container" src="CoW_stream.png">
-   </details>
-  </div>
-  <div class="box">
-   <details>
-    <summary>OpenFOAM <br>
-    </summary>
-    <p>Lid-driven cavity, IcoFoam solver
-     <br>Top wall 1 m/s, Re = 100
-    </p>
-    <img class="img-cont3" src="cavity.svg">
-    <center>
-     <img class="img-cont3" src="LDC_FOAM.png">
-    </center>
-   <br><br>
-    <p> Plate with Hole, SolidDisplacementFoam solver</p>
-    <img class="img-cont3" src="plate.svg">
-    <center>
-     <img class="img-cont3" src="Plate_FOAM.png">
-    </center>
-    <p>\(\sigma_{xx}\) <br>Stress field </p>
-    <br><br>
-    <p>High Re Tesla valve forward and reverse flow</p>
-    <center>
-     <img class="img-cont3" src="teslavalve.png">
-    </center>
-    <p>\(v_{mag}\)</p>
-   </details>
-  </div>
-  <div class="b">
-   <p>&copy;Tyler Naus. All Rights Reserved </p>
-  </div>
- </body>
+        summary {
+            margin: -0.5em -0.5em 0;
+            padding: 0.5em;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="a">
+        <h3>CAE w/ Ansys, OpenFOAM, Octave</h3>
+    </div>
+    <div class="box">
+        <details>
+            <summary>Blood Flow CFD - Fluent <br></summary>
+            <h3>Carotid Bifurcation</h3>
+            <p>Inlet: 0.315 m/s steady, Outlet: 13332 Pa static <br>\(\rho\) = 1060 kg/m <sup>3</sup>, \(\nu\) =
+                Carreau model </p>
+            <img class="img-cont2" src="artery_setup.png" alt="Artery Setup">
+            <img class="img-container" src="artery.png" alt="Artery Image">
+            <br>
+            <h3>Circle of Willis Model</h3>
+            <p>Inlets: 0.5 m/s (Internal carotid arteries), 0.15 m/s (Vertebral arteries) Outlets: 13332 Pa static
+            </p>
+            <img class="img-cont2" src="CoW_setup.png" alt="Circle of Willis Setup">
+            <img class="img-container" src="CoW_pressure.png" alt="Circle of Willis Pressure">
+            <img class="img-container" src="CoW_stream.png" alt="Circle of Willis Stream">
+        </details>
+    </div>
+    <div class="box">
+        <details>
+            <summary>OpenFOAM <br></summary>
+            <p>Lid-driven cavity, IcoFoam solver <br>Top wall 1 m/s, Re = 100</p>
+            <img class="img-cont3" src="cavity.svg" alt="Lid-driven cavity">
+            <center>
+                <img class="img-cont3" src="LDC_FOAM.png" alt="Lid-driven cavity FOAM">
+            </center>
+            <br><br>
+            <p>Plate with Hole, SolidDisplacementFoam solver</p>
+            <img class="img-cont3" src="plate.svg" alt="Plate with Hole">
+            <center>
+                <img class="img-cont3" src="Plate_FOAM.png" alt="Plate with Hole FOAM">
+            </center>
+            <p>\(\sigma_{xx}\) <br>Stress field </p>
+            <br><br>
+            <p>High Re Tesla valve forward and reverse flow</p>
+            <center>
+                <img class="img-cont3" src="teslavalve.png" alt="Tesla Valve">
+            </center>
+            <p>\(v_{mag}\)</p>
+        </details>
+    </div>
+    <div class="b">
+        <p>&copy; 2024 Tyler Naus. All Rights Reserved. </p>
+    </div>
+</body>
+
 </html>
+
