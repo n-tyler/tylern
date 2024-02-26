@@ -71,6 +71,18 @@
             margin: -0.5em -0.5em 0;
             padding: 0.5em;
         }
+
+    .image-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 columns */
+    gap: 10px; /* Gap between images */
+  }
+  
+  /* Style for individual images */
+  .image-grid img {
+    max-width: 100%; /* Make sure images don't exceed their container */
+    height: auto; /* Maintain aspect ratio */
+  }
     </style>
 </head>
 
@@ -118,6 +130,38 @@
             <p>\(v_{mag}\)</p>
         </details>
     </div>
+ <div class="box">
+        <details>
+            <summary>CAD <br></summary>
+    <div class="image-grid">
+  <div>
+    <img src="IES-1402.jpg" alt="">
+  </div>
+
+  <div>
+    <img src="Ex-2.jpg" alt="">
+  </div>
+
+  <div>
+    <img src="Ex-3.jpg" alt="">
+  </div>
+
+  <div>
+    <img src="Ex-4.jpg" alt="">
+  </div>
+
+  <div>
+    <img src="Knuckle-Joint.jpg" alt="">
+  </div>
+        
+  <div>
+    <img src="Sheet-Metal-Ex-1.jpg" alt="">
+  </div>
+
+</div>
+        </details>
+ </div>
+    
     <p><a href="Mechanics_Eqs.pdf">Mech of Materials Equations PDF</a>
     <br><a href="Dynamics_Eqs.pdf">Dynamics Eqs PDF</a></p>
     <div class="b">
