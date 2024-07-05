@@ -89,15 +89,15 @@
 <body>
     <div class="box">
         <details>
-            <summary>Ansys Fluent CFD <br></summary>
+            <summary>Ansys CFD <br></summary>
             <h3>Carotid Bifurcation</h3>
-            <p>Inlet: steady 0.315 m/s, Outlet: 13332 Pa <br>\(\rho\) = 1060 kg/m <sup>3</sup>, \(\nu\) =
+            <p>Inlet: 0.315 m/s. Outlet: 13332 Pa <br>\(\rho\) = 1060 kg/m <sup>3</sup>. \(\nu\) =
                 Carreau model </p>
             <img class="img-cont2" src="artery_setup.png" alt="Artery Setup">
             <img class="img-container" src="artery.png" alt="Artery Image">
             <br>
-            <h3>Circle of Willis Model</h3>
-            <p>Inlets: 0.5 m/s (Internal carotid arteries), 0.15 m/s (Vertebral arteries) Outlets: 13332 Pa static
+            <h3>Circle of Willis</h3>
+            <p>Inlets: internal carotid, 0.5 m/s; vertebral, 0.15 m/s. Outlets: 13332 Pa
             </p>
             <img class="img-cont2" src="CoW_setup.png" alt="Circle of Willis Setup">
             <img class="img-container" src="CoW_pressure.png" alt="Circle of Willis Pressure">
@@ -106,14 +106,14 @@
     </div>
     <div class="box">
         <details>
-            <summary>OpenFOAM CFD<br></summary>
-            <p>Lid-driven cavity, IcoFoam solver <br>Top wall 1 m/s, Re = 100</p>
+            <summary>OpenFOAM <br></summary>
+            <p>Lid-driven cavity <br>Top boundary: 1 m/s. Re = 100</p>
             <img class="img-cont3" src="cavity.svg" alt="Lid-driven cavity">
             <center>
                 <img class="img-cont3" src="LDC_FOAM.png" alt="Lid-driven cavity FOAM">
             </center>
             <br><br>
-            <p>Plate w/ Hole, SolidDisplacementFoam solver</p>
+            <p>Plate w/ Hole </p>
             <img class="img-cont3" src="plate.svg" alt="Plate with Hole">
             <center>
                 <img class="img-cont3" src="Plate_FOAM.png" alt="Plate with Hole FOAM">
